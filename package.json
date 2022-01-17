@@ -1,0 +1,22 @@
+{
+  "name": "boiler-plate",
+  "version": "1.0.0",
+  "description": "A101 Node.js Ödev-2 Emre Gül & Hasan Demir",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A101-Node-js-TypeScript-Bootcamp/a101-bootcamp-odev2-hsndmr58-emregul.git"
+  },
+  "author": "Hasan-Emre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A101-Node-js-TypeScript-Bootcamp/a101-bootcamp-odev2-hsndmr58-emregul/issues"
+  },
+  "homepage": "https://github.com/A101-Node-js-TypeScript-Bootcamp/a101-bootcamp-odev2-hsndmr58-emregul#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
