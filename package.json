@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/A101-Node-js-TypeScript-Bootcamp/a101-bootcamp-odev2-hsndmr58-emregul#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "express-jwt": "^6.1.0",
+    "jsonwebtoken": "^8.5.1"
   }
 }
