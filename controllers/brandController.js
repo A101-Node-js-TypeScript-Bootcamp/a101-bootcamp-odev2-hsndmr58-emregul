@@ -7,3 +7,8 @@ exports.fetchBrand= async (req,res)=>{
         data:response
     })
 }
+
+exports.singleFetchBrand =async(req,res)=>{
+    const response= await brandService.singleFetchBrand(req.params.id)
+    res.send(response)
+}
