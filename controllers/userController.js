@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+const Joi = require('joi'); 
 
 
 exports.get = (req,res) => {
@@ -36,9 +37,24 @@ exports.login = (req,res) => {
     }
 }
 
-exports.register  = (req,res) => {
-    let response = {
-        status: true
+exports.register  = async (req, res, next) => { 
+    const schema = Joi.object({
+        email: Joi.string().email().required(),
+        password: Joi.string().min(6).required(),
+    });
+    const { error, value } = schema.validate(req.body);
+
+    if (error) {
+        let response = {
+            status: false,
+            message: 'Email or password is wrong'
+        }
+        res.status(401).send(response)
+    } else {
+        let response = {
+            status: true
+        }
+        res.status(200).send(response)
     }
-    res.status(200).send(response)
 }
+
