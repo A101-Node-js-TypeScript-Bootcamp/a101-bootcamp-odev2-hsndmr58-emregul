@@ -6,7 +6,7 @@ const errorHandler = require('./helpers/error-handler')
 
 
 app.use(express.json());
-app.use(jwt());
+app.use(jwt());//JWT middlewear
 app.use('/api',endPoint);
 app.use(errorHandler);
 
